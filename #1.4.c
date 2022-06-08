@@ -15,7 +15,7 @@ int main()
     int j=0;
     printf("Enter the number of student's data you wanna enter?\n");
     scanf("%d",&n);
-    SR = fopen("Student.txt",'a+');
+    SR = fopen("Student.txt","a+");
     for(int i=0;i<n;i++)
     {
         printf("\nName:\n>");
@@ -33,11 +33,12 @@ int main()
     }
     fclose(SR);
     FILE *PR;
-    PR = fopen("Student.txt",'r');
+    PR = fopen("Student.txt","r");
     printf("\nName\t\tRoll NO.\tAdress\t\tPhone No.\n>");
     while(fscanf(PR,"%s%d%s%d",s[j].name,s[j].rollno,s[j].address,s[j].phone_number)!=EOF)
     {
         printf("%s\t%d\t%s\t%d",s[j].name,s[j].rollno,s[j].address,s[j].phone_number);
+        printf("\n");
         j+=1;
     }
     fclose(PR);
