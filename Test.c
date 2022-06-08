@@ -1,12 +1,13 @@
 #include<stdio.h>
 int main()
 {
+    char name[100];
     /*int set[3]={1,2,3};
     int *att;
     att = set;
     printf("%d\n",set);
     printf("%d\n",*att);
-    printf("%d",*(att+1));*/
+    printf("%d",*(att+1));
     FILE *pr;
     char name[50];
     pr = fopen("HelloWorld.txt","a+");
@@ -14,5 +15,8 @@ int main()
     scanf("%s",name);
     //fscanf(pr,"%s",name);
     fclose(pr);
+    return 0;*/
+    scanf("%[^\n]",name);
+    printf("%s",name);
     return 0;
 }
