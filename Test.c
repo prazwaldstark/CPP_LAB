@@ -12,7 +12,7 @@ int main()
     pr = fopen("HelloWorld.txt","a+");
     fprintf(pr,"Hello World");
     scanf("%s",name);
-    fprintf(pr,"%s",name);
+    //fscanf(pr,"%s",name);
     fclose(pr);
     return 0;
 }
