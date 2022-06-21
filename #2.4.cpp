@@ -1,5 +1,5 @@
 #include<cstdio>
-int temp_comp(int &temp1, int &temp2)
+int &temp_comp(int &temp1, int &temp2)
 {
     if (temp1>temp2)
         return temp1;
