@@ -7,11 +7,12 @@ array. Make your own function for the concatenation of two strings.*/
 #include <iostream>
 #include <cstring>
 using namespace std;
+string con_string;
 class Program{
 public:
-    string str1,con_string;
+    string str1;
     Program(string string1){str1 = string1;}
-    ~Program();
+    ~Program(){}
     string join(){
         con_string += str1;
         return con_string;
@@ -23,9 +24,8 @@ public:
 };
 
 int main(){
-    Program o1("Engineers are");
+    Program o1("Engineers are ");
     o1.join();
     Program o2("Creatures of Logic");
-    o2.join();
     o2.display_result();
 }
